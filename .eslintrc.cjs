@@ -6,12 +6,26 @@ module.exports = {
     'plugin:react/recommended',
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
+    "plugin:prettier/recommended",
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh'],
+  plugins: ['react-refresh', "prettier"],
   rules: {
+    "prettier/prettier": [
+      "error",
+      {
+        "semi": false,
+        "endOfLine": "auto",
+        "tabWidth": 2,
+        "printWidth": 160,
+        "singleQuote": true,
+        "trailingComma": "all",
+        "bracketSameLine": true,
+        "plugins": ["prettier-plugin-tailwindcss"]
+      }
+    ],
     'react/jsx-no-target-blank': 'off',
     'react-refresh/only-export-components': [
       'warn',
