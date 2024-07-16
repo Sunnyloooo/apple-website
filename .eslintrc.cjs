@@ -7,11 +7,12 @@ module.exports = {
     'plugin:react/jsx-runtime',
     'plugin:react-hooks/recommended',
     "plugin:prettier/recommended",
+    "plugin:@react-three/recommended"
   ],
   ignorePatterns: ['dist', '.eslintrc.cjs'],
   parserOptions: { ecmaVersion: 'latest', sourceType: 'module' },
   settings: { react: { version: '18.2' } },
-  plugins: ['react-refresh', "@react-three", "prettier"],
+  plugins: ['react-refresh', "prettier", "@react-three"],
   rules: {
     "prettier/prettier": [
       "error",
