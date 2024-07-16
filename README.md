@@ -53,7 +53,7 @@ The built files will be in the `dist` directory.
 ## Project Structure
 
 ```plaintext
-apple-website-clone/
+apple-website/
 ├── public/
 │   ├── index.html
 │   └── ...
@@ -78,16 +78,6 @@ apple-website-clone/
   - **styles/**: Contains Tailwind CSS styles and custom styles.
   - **App.jsx**: Main application component.
   - **index.jsx**: Entry point of the React application.
-
-## Using the Technologies
-
-- **React.js**: Used to build the user interface components.
-- **Three.js**: Used to create 3D graphics.
-- **React Three Fiber**: Used to integrate Three.js with React.
-- **React Three Drei**: Provides useful helpers to simplify working with Three.js and React Three Fiber.
-- **GSAP (Greensock)**: Used for creating animations.
-- **Vite**: Used as the build tool and development server for a fast and efficient workflow.
-- **Tailwind CSS**: Used for styling the application with utility-first CSS classes.
 
 ## Contributing
 
